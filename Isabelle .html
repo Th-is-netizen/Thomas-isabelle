@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MVV — Amour de jeunesse</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{--bg:#09090b;--panel:#121216;--cream:#f5f0e8;--muted:#aaa5a0;--red:#b72b3b;--line:#2a2728}
+*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:"DM Sans",sans-serif;line-height:1.6}.noise{position:fixed;inset:0;pointer-events:none;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");z-index:9}header{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;position:sticky;top:0;background:#09090bdd;backdrop-filter:blur(16px);z-index:10;border-bottom:1px solid #ffffff08}.logo{font-family:"Playfair Display";font-size:28px;color:var(--cream);text-decoration:none;letter-spacing:1px}.logo span{color:var(--red);font-size:20px;margin:0 2px}nav{display:flex;gap:25px}nav a{color:#bdb8b3;text-decoration:none;font-size:13px}nav a:hover{color:white}.hero{min-height:calc(100vh - 76px);display:grid;grid-template-columns:1.2fr .8fr;align-items:center;padding:8vw 10vw;gap:7vw;background:radial-gradient(circle at 70% 45%,#40131a55,transparent 35%),linear-gradient(120deg,#09090b,#111014)}.kicker{font-size:11px;letter-spacing:3px;color:#c88b91;font-weight:700}.hero h1{font:700 clamp(80px,15vw,180px)/.8 "Playfair Display";margin:20px 0 8px;letter-spacing:-8px}.hero h2{font:500 clamp(35px,5vw,62px)/1 "Playfair Display";margin:0 0 20px}.hero h2:after{content:"";display:inline-block;width:65px;height:1px;background:var(--red);margin:0 0 13px 16px}.lead{font-size:18px;color:#c5c0bb;max-width:550px}.actions{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}.btn{border:1px solid #9d2735;background:var(--red);color:white;padding:13px 20px;border-radius:3px;text-decoration:none;cursor:pointer;font-weight:600}.btn.ghost{background:transparent;border-color:#454044}.micro{min-height:25px;color:#dca1a8}.hero-emblem{height:360px;width:360px;border-radius:50%;border:1px solid #ffffff18;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;text-align:center;margin:auto;background:radial-gradient(circle,#36101855,transparent 60%)}.hero-emblem span:first-of-type{font:600 100px/.8 "Playfair Display";color:#eee}.hero-emblem span:last-of-type{font:500 22px "Playfair Display";margin-top:12px}.hero-emblem small{letter-spacing:5px;color:#b96b74}.ring{position:absolute;inset:-18px;border:1px solid #8c2b3630;border-radius:50%;animation:spin 20s linear infinite}.ring2{inset:22px;border-style:dashed;animation-direction:reverse;animation-duration:15s}@keyframes spin{to{transform:rotate(360deg)}}.section{padding:110px 10vw}.dark{background:#0e0e11}.heading{max-width:760px;margin-bottom:50px}.heading h2{font:600 clamp(38px,5vw,64px)/1.05 "Playfair Display";margin:12px 0 18px}.heading>p:last-child{color:var(--muted)}.timeline{max-width:900px;border-left:1px solid #40383a;margin-left:15px}.timeline article{position:relative;padding:0 0 50px 50px}.timeline article b{position:absolute;left:-17px;top:0;width:32px;height:32px;border:1px solid #8c2b36;background:#0b0b0d;border-radius:50%;display:grid;place-items:center;color:#c87b84;font-size:11px}.timeline article span{font-size:10px;letter-spacing:2px;color:#b96b74}.timeline h3{font:500 30px "Playfair Display";margin:7px 0}.timeline p{color:#aaa5a0;max-width:700px}.memory-grid,.cards3{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.memory{min-height:230px;padding:28px;background:#151519;border:1px solid #262329;display:flex;flex-direction:column;justify-content:flex-end}.memory strong{color:#b96b74}.memory h3{font:500 25px "Playfair Display";margin:8px 0}.memory p{font-size:13px;color:#969197}.memory.add{border-style:dashed;background:transparent}.cards3{grid-template-columns:repeat(3,1fr)}.profile{padding:35px;background:#121216;border:1px solid #262329;min-height:250px}.profile span{color:#b96b74;font-size:11px}.profile h3{font:500 36px "Playfair Display";margin:20px 0}.profile p{color:#aaa5a0}.featured{border-color:#63242c;background:linear-gradient(145deg,#171116,#111115)}.quote-section{padding:110px 12vw;text-align:center;background:#191116}.quote-section p{font:500 clamp(28px,4vw,52px)/1.3 "Playfair Display";margin:0}.future{max-width:850px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.future label{padding:18px;background:#151519;border:1px solid #29252a;color:#c5c0bb;cursor:pointer}.future input{accent-color:#b72b3b;margin-right:12px}.message-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.message-grid button{padding:30px 18px;background:#131317;border:1px solid #302b30;color:#eee;text-align:left;cursor:pointer;font:500 22px "Playfair Display"}.message-grid button:hover{border-color:#8c2b36;transform:translateY(-3px)}.modal{position:fixed;inset:0;background:#000b;display:none;place-items:center;z-index:20;padding:20px}.modal.show{display:grid}.modal-box{max-width:550px;background:#151519;border:1px solid #63242c;padding:45px;position:relative}.modal-box p{font:500 26px/1.5 "Playfair Display"}.modal-box #close{position:absolute;right:15px;top:10px;background:none;border:0;color:white;font-size:28px;cursor:pointer}.secret{background:radial-gradient(circle at 50% 20%,#34101766,transparent 45%)}.secret-box{max-width:600px;padding:45px;background:#111115;border:1px solid #332a2e}.secret-box input{width:60%;padding:14px;background:#0a0a0c;border:1px solid #383238;color:white;margin-right:8px}.secret-box p{color:#aaa5a0}#secretText{color:#e0a1a8;margin-top:22px;min-height:28px}footer{text-align:center;padding:70px 20px;border-top:1px solid #242126;color:#88838a}footer .logo{margin-bottom:10px}footer small{display:block;margin-top:20px;color:#68636a}
+@media(max-width:800px){header{padding:0 5vw}nav{display:none}.hero{grid-template-columns:1fr;padding:70px 7vw}.hero-emblem{width:260px;height:260px}.hero-emblem span:first-of-type{font-size:75px}.section{padding:80px 7vw}.memory-grid,.cards3,.message-grid{grid-template-columns:1fr 1fr}.future{grid-template-columns:1fr}.hero h1{letter-spacing:-4px}}
+@media(max-width:500px){.memory-grid,.cards3,.message-grid{grid-template-columns:1fr}.hero{padding-top:55px}.hero-emblem{margin-top:35px}}
+
+</style>
+</head>
+<body>
+<div class="noise"></div>
+<header>
+  <a class="logo" href="#accueil">M<span>♥</span>V</a>
+  <nav>
+    <a href="#histoire">Notre histoire</a>
+    <a href="#souvenirs">Souvenirs</a>
+    <a href="#nous">Nous</a>
+    <a href="#projets">Nos projets</a>
+    <a href="#messages">Messages</a>
+    <a href="#secret">Secret</a>
+  </nav>
+</header>
+
+<main>
+<section id="accueil" class="hero">
+  <div class="hero-copy">
+    <p class="kicker">AMOUR DE JEUNESSE • DEPUIS LE 7 JUIN 2025</p>
+    <h1>MVV</h1>
+    <h2>Jusqu'au bout.</h2>
+    <p class="lead">Peu importe les difficultés, nous continuerons à nous aimer.</p>
+    <div class="actions">
+      <a class="btn" href="#histoire">Entrer dans notre histoire</a>
+      <button class="btn ghost" id="heart">♥ Un peu d'amour</button>
+    </div>
+    <p id="heartText" class="micro"></p>
+  </div>
+  <div class="hero-emblem">
+    <div class="ring"></div><div class="ring ring2"></div>
+    <span>7</span><small>JUIN</small><span>2025</span>
+  </div>
+</section>
+
+<section id="histoire" class="section">
+  <div class="heading"><p class="kicker">CHAPITRE I</p><h2>Tout a commencé par des regards.</h2>
+  <p>Au lycée, il y avait ces regards qui en disaient déjà beaucoup. Elle était belle. Et lui ? Évidemment, il a fini par faire le premier pas. 😁</p></div>
+  <div class="timeline">
+    <article><b>01</b><span>LE LYCÉE</span><h3>Jeu de regards 👀</h3><p>Deux personnes qui se remarquent, sans encore savoir jusqu'où cette histoire allait les mener.</p></article>
+    <article><b>02</b><span>LE COUP DE FOUDRE</span><h3>« C'est moi évidemment. » 😁</h3><p>Un coup de foudre, beaucoup d'émotions et le début d'une histoire qui allait prendre une vraie place.</p></article>
+    <article><b>03</b><span>LE 7 JUIN 2025</span><h3>Le début officiel</h3><p>Une date qui est devenue le point de départ de notre « nous ».</p></article>
+    <article><b>04</b><span>LE BAC</span><h3>Elle était là.</h3><p>Visite au centre, émotions, attente des résultats… Isabelle a accompagné Thomas pendant tout ce processus. Et le jour du résultat, c'est elle qui lui a annoncé qu'il avait réussi. ❤️</p></article>
+  </div>
+</section>
+
+<section id="souvenirs" class="section dark">
+  <div class="heading"><p class="kicker">CHAPITRE II</p><h2>Nos souvenirs</h2><p>Un espace volontairement vide pour que votre histoire continue de s'y écrire.</p></div>
+  <div class="memory-grid">
+    <div class="memory"><strong>01</strong><h3>Une sortie</h3><p>Ajoute ici une photo + la date + votre petite anecdote.</p></div>
+    <div class="memory"><strong>02</strong><h3>Un moment inattendu</h3><p>Un souvenir que vous ne voulez jamais oublier.</p></div>
+    <div class="memory"><strong>03</strong><h3>Un fou rire</h3><p>Le genre de moment qui n'a de sens que pour vous deux.</p></div>
+    <div class="memory add"><strong>+</strong><h3>À ajouter</h3><p>Votre prochain souvenir.</p></div>
+  </div>
+</section>
+
+<section id="nous" class="section">
+  <div class="heading"><p class="kicker">CHAPITRE III</p><h2>Moi. Elle. Nous.</h2></div>
+  <div class="cards3">
+    <div class="profile"><span>01</span><h3>Moi</h3><p>Mon humour. Mon caractère. Et cette volonté de construire quelque chose qui dure.</p></div>
+    <div class="profile"><span>02</span><h3>Elle</h3><p>Son rire, sa personnalité, sa fidélité. Attentive, patiente, directe, émotive… avec ce petit talent pour cacher son jeu.</p></div>
+    <div class="profile featured"><span>03</span><h3>Nous</h3><p>Des sorties qui deviennent de plus en plus belles. Des appels toute la nuit sans même avoir besoin de parler. Et une histoire qui continue malgré les petites épreuves.</p></div>
+  </div>
+</section>
+
+<section class="quote-section">
+  <p>« Certaines histoires commencent par de grands événements.<br>La nôtre a commencé par des regards. »</p>
+</section>
+
+<section id="projets" class="section dark">
+  <div class="heading"><p class="kicker">CHAPITRE IV</p><h2>Notre futur, à deux</h2><p>Pas besoin de tout savoir aujourd'hui. Mais certaines choses, on les imagine déjà.</p></div>
+  <div class="future">
+    <label><input type="checkbox"> Voyager ensemble ✈️</label>
+    <label><input type="checkbox"> Faire restaurant après restaurant 🍽️</label>
+    <label><input type="checkbox"> Faire toutes sortes d'activités ensemble</label>
+    <label><input type="checkbox"> Assister à sa cérémonie de graduation 🎓</label>
+    <label><input type="checkbox"> Assister à ma cérémonie de graduation 🎓</label>
+    <label><input type="checkbox"> Construire notre avenir</label>
+    <label><input type="checkbox"> Avoir beaucoup d'argent 💰</label>
+    <label><input type="checkbox"> Se marier 💍</label>
+    <label><input type="checkbox"> Fonder une famille 👨‍👩‍👧‍👦</label>
+  </div>
+</section>
+
+<section id="messages" class="section">
+  <div class="heading"><p class="kicker">CHAPITRE V</p><h2>À ouvrir quand...</h2><p>Les messages sont modifiables plus tard. Pour l'instant, quelques portes attendent d'être ouvertes.</p></div>
+  <div class="message-grid">
+    <button data-msg="Même quand tu ne le dis pas, rappelle-toi que ton rire a une place spéciale dans mon monde.">Tu es triste</button>
+    <button data-msg="Tu me manques ? Alors imagine-moi en train de penser à toi au même moment. ❤️">Je te manque</button>
+    <button data-msg="Respire. On peut être en désaccord sans devenir des ennemis. Notre histoire vaut plus qu'une petite dispute.">On s'est disputés</button>
+    <button data-msg="Tu es irremplaçable. Et cette phrase, je veux pouvoir te la prouver par mes actes, pas seulement par mes mots.">Tu as besoin de sourire</button>
+  </div>
+  <div id="modal" class="modal"><div class="modal-box"><button id="close">×</button><p id="modalText"></p></div></div>
+</section>
+
+<section id="secret" class="section secret">
+  <div class="heading"><p class="kicker">ESPACE SECRET</p><h2>🔐 Pour nous deux</h2><p>Un petit coffre à remplir au fil du temps.</p></div>
+  <div class="secret-box">
+    <p>Entre un code symbolique pour ouvrir votre première surprise.</p>
+    <input id="code" type="password" placeholder="Code">
+    <button class="btn" id="unlock">Ouvrir</button>
+    <p id="secretText"></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="logo">M<span>♥</span>V</div>
+  <p>Une histoire de jeunesse. Un amour qui apprend, grandit et avance.</p>
+  <small>7 juin 2025 — et la suite reste à écrire.</small>
+</footer>
+
+<script>
+const heart=document.getElementById('heart'), heartText=document.getElementById('heartText');
+heart.onclick=()=>{heartText.textContent="« Jusqu'au bout, peu importe les difficultés. » ❤️"; for(let i=0;i<12;i++){const s=document.createElement('span');s.textContent='♥';s.style.cssText=`position:fixed;left:${45+Math.random()*10}%;top:60%;color:#b72b3b;font-size:${12+Math.random()*20}px;z-index:30;pointer-events:none;animation:float 1.5s ease-out forwards`;document.body.appendChild(s);setTimeout(()=>s.remove(),1500)}};
+const style=document.createElement('style');style.textContent='@keyframes float{to{transform:translateY(-180px) translateX('+(-80+Math.random()*160)+'px);opacity:0}}';document.head.appendChild(style);
+
+document.querySelectorAll('[data-msg]').forEach(b=>b.onclick=()=>{document.getElementById('modalText').textContent=b.dataset.msg;document.getElementById('modal').classList.add('show')});
+document.getElementById('close').onclick=()=>document.getElementById('modal').classList.remove('show');
+document.getElementById('modal').onclick=e=>{if(e.target.id==='modal')e.currentTarget.classList.remove('show')};
+
+document.getElementById('unlock').onclick=()=>{
+  const code=document.getElementById('code').value.trim();
+  const out=document.getElementById('secretText');
+  if(code==='070625') out.textContent="🔓 Bienvenue dans votre espace secret. La vraie surprise pourra être ajoutée ici plus tard…";
+  else out.textContent="🔒 Pas encore… ce coffre attend le bon code.";
+};
+
+</script>
+</body>
+</html>
